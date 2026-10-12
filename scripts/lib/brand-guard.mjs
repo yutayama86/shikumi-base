@@ -13,7 +13,7 @@ export const BRAND_PRIME_DIRECTIVE =
   'シクミベースは特定業界向けのリフォーム支援事業ではない。旧リフォーム反響OS、見積フォロー漏れ診断、旧リフォーム専用URL・価格・商品仕様は廃止済みであり、本文、タイトル、description、keywords、CTA、内部リンク、事例として一切使用してはならない。';
 
 export const BRAND_POSITION =
-  'シクミベースは、中小企業・地域企業の集客・営業・業務・発信・組織を、属人的な頑張りではなく再現可能な仕組みに変える事業ブランドです。Web・SNS・AI・SEOは商品そのものではなく、仕組みを実装する手段として扱います。';
+  'シクミベースは、中小企業・地域事業者のホームページ制作・改善、SNSの企画・添削・分析、問い合わせ・業務の整理を支援する事業ブランドです。必要な仕事を絞り、担当者が継続できる手順と運用まで整えます。固定価格の商品や未確認の成果を創作せず、撮影・投稿代行・個別開発は別途対応可否を確認します。';
 
 /**
  * 生成物に含まれてはならない旧文脈。
@@ -48,9 +48,9 @@ export function findLegacyTermsInPrompt(prompt) {
 /** サイト上に実在し、生成記事から張ってよい固定ページ。 */
 export const STATIC_LINK_TARGETS = [
   { path: '/service/', label: '支援内容の一覧' },
-  { path: '/service/web/', label: '集客・営業の仕組み' },
-  { path: '/service/sns/', label: '発信の仕組み' },
-  { path: '/service/ai-dx/', label: '業務・改善の仕組み' },
+  { path: '/service/web/', label: 'ホームページ制作・改善' },
+  { path: '/service/sns/', label: 'SNSの企画・改善支援' },
+  { path: '/service/ai-dx/', label: '問い合わせ・業務の整理' },
   { path: '/case/ibatoco/', label: 'イバトコ（シクミベースが自ら運営する地域メディアの公開ケーススタディ。顧客事例ではない）' },
   { path: '/contact/', label: '仕組み化の相談窓口' },
 ];

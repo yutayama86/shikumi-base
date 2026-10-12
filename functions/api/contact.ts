@@ -33,10 +33,10 @@ interface Submission {
 
 // src/pages/contact/index.astro の選択肢（src/data/taxonomy.ts のサービス名）と揃える。
 const TOPIC_LABELS: Record<string, string> = {
-  system: 'どこから仕組み化すべきか整理したい',
-  web: '集客・営業の仕組み',
-  sns: '発信の仕組み',
-  'ai-dx': '業務・改善の仕組み',
+  system: '自社に合う支援を相談したい',
+  web: 'ホームページ制作・改善',
+  sns: 'SNSの企画・改善支援',
+  'ai-dx': '問い合わせ・業務の整理',
   local: '茨城・地域のプロジェクト',
   other: 'その他',
 };

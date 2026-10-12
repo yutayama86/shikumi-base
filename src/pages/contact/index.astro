@@ -4,7 +4,7 @@ import { services } from '../../data/taxonomy';
 import { contact } from '../../site.config';
 
 const topics = [
-  { value: 'system', label: 'どこから仕組み化すべきか整理したい' },
+  { value: 'system', label: '自社に合う支援を相談したい' },
   ...services.map((s) => ({ value: s.id, label: s.name })),
   { value: 'local', label: '茨城・地域のプロジェクトを相談したい' },
   { value: 'other', label: 'その他' },
@@ -15,10 +15,10 @@ const turnstileSiteKey = '0x4AAAAAAEmB3I5NAyMoIF6c';
 
 <PageLayout
   title="お問い合わせ｜シクミベース"
-  description="集客・営業・発信・業務の仕組み化についてのご相談窓口です。Web・SNS・AIありきではなく、現在の課題と改善優先順位から整理します。"
+  description="ホームページ制作・改善、SNSの企画・添削・分析、問い合わせ・業務の整理についての相談窓口です。現在の状況を確認し、支援内容、役割分担、期間、費用をご案内します。"
   kicker="CONTACT"
-  heading="どこを仕組みにすると、一番効果が大きいか。"
-  lead="課題がまだ整理できていなくても構いません。現在の集客・営業・発信・業務の状態を伺い、最初に手を付けるべき場所を整理します。"
+  heading="今困っていることを、お聞かせください。"
+  lead="サイトやSNSのURL、改善したいこと、ご希望の時期をお知らせください。内容を確認して、対応できる支援と進め方をご案内します。"
   crumbs={[{ label: 'ホーム', href: '/' }, { label: 'お問い合わせ' }]}
 >
   <div class="wrap body">
@@ -59,7 +59,7 @@ const turnstileSiteKey = '0x4AAAAAAEmB3I5NAyMoIF6c';
           rows="9"
           required
           maxlength="5000"
-          placeholder="例：社長に営業や確認業務が集中している／Webから問い合わせを増やしたい／SNS運用を属人化させたくない／AIを業務に組み込みたい、など"
+          placeholder="例：ホームページのサービス説明を分かりやすくしたい／SNSの投稿企画や添削を相談したい／問い合わせの対応状況を管理表にまとめたい、など。ご希望の時期や社内の担当者の有無もお知らせください。"
         ></textarea>
       </div>
 
@@ -92,21 +92,21 @@ const turnstileSiteKey = '0x4AAAAAAEmB3I5NAyMoIF6c';
       <section class="side__block">
         <h2 class="side__title">主なご相談</h2>
         <ul class="side__list">
-          <li>社長や一部の担当者に仕事が集中している</li>
-          <li>紹介・人脈・個人営業への依存を減らしたい</li>
-          <li>WebやSNSを事業成果につながる仕組みにしたい</li>
-          <li>AIや自動化を業務フローに組み込みたい</li>
-          <li>成果が出た方法を標準化して残したい</li>
+          <li>ホームページの制作・リニューアル・更新</li>
+          <li>SNSの投稿企画・添削・分析と改善</li>
+          <li>予約や問い合わせへの導線づくり</li>
+          <li>問い合わせ管理表・返信例・手順書の整備</li>
+          <li>自社に合う支援内容・費用の相談</li>
         </ul>
       </section>
 
       <section class="side__block">
         <h2 class="side__title">進め方</h2>
         <ol class="side__steps">
-          <li><strong>01 整理</strong><span>課題とボトルネックを確認</span></li>
-          <li><strong>02 設計</strong><span>仕組みにする範囲を決定</span></li>
-          <li><strong>03 実装</strong><span>必要な手段だけ導入</span></li>
-          <li><strong>04 改善</strong><span>数字を見て継続改善</span></li>
+          <li><strong>01 内容確認</strong><span>サイト・SNS・現在の状況を確認</span></li>
+          <li><strong>02 ご案内</strong><span>支援範囲・納品物・期間・費用をご提案</span></li>
+          <li><strong>03 開始</strong><span>内容に合意してから制作・運用へ</span></li>
+          <li><strong>04 共有・改善</strong><span>使い方や運用結果を確認</span></li>
         </ol>
       </section>
 

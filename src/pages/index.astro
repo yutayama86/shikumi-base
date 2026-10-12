@@ -33,8 +33,8 @@ const jsonLd = {
     },
     {
       '@type': 'Service',
-      name: '事業の仕組み化支援',
-      serviceType: '中小企業・地域企業の集客・営業・業務・情報発信の仕組み化設計と実装',
+      name: 'ホームページ制作・SNS企画改善・業務整理',
+      serviceType: '中小企業・地域事業者のホームページ制作・改善、SNSの企画・改善支援、問い合わせ・業務の整理',
       url: site.url,
       provider: { '@type': 'Organization', name: site.name, url: site.url },
       audience: { '@type': 'BusinessAudience', audienceType: '中小企業・地域企業の経営者・事業責任者' },
@@ -48,8 +48,8 @@ const jsonLd = {
 
   <main id="main">
     <Hero />
-    <About />
     <Services />
+    <About />
     <Process />
 
     {latest.length > 0 && (

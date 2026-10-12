@@ -1,68 +1,49 @@
 ---
-const gaps = [
-  {
-    title: '社長に仕事が集まる',
-    body: '判断・営業・確認が一人に集中し、忙しくなるほど事業が止まりやすくなる。',
-  },
-  {
-    title: '成果が再現できない',
-    body: 'うまくいった方法が個人の経験に残り、他の人へ引き継げない。',
-  },
-  {
-    title: '改善が感覚頼りになる',
-    body: '数字や記録がつながっておらず、次に何を直すべきか判断しにくい。',
-  },
-];
+import { services } from '../data/taxonomy';
 ---
 
-<section class="about section" id="about">
+<section class="examples section" id="support-examples">
   <div class="wrap">
-    <div class="about__head reveal">
-      <p class="kicker">仕組み化する理由<span class="kicker__en">WHY SYSTEMIZE</span></p>
-      <h2 class="about__statement">
-        <span class="phrase">頑張る人を増やす前に、</span><br />
-        <strong class="phrase">頑張らなくても回る部分を増やす。</strong>
-      </h2>
-      <p class="about__lead measure">
-        事業が伸びるほど、集客・営業・業務・情報発信は複雑になります。そこで人を増やすだけでは、
-        属人化も管理コストも増えます。シクミベースは、成果が出る流れを整理し、誰でも回せて改善できる形に変えます。
-      </p>
+    <div class="examples__head reveal">
+      <p class="kicker">支援イメージ<span class="kicker__en">EXAMPLES</span></p>
+      <h2 class="section-title">ご相談から、こんな形に整えます。</h2>
+      <p class="section-lead measure">困りごとに対して、どんな仕事を引き受け、何をお渡しするのか。具体的な相談例でご紹介します。</p>
+      <p class="examples__note">以下は提供内容を説明するための相談例です。実際の内容は、状況とご依頼の範囲に合わせて決めます。</p>
     </div>
-
-    <ol class="gaps">
-      {gaps.map((item, index) => (
-        <li class="gap reveal" data-delay={String(index)}>
-          <span class="gap__no" aria-hidden="true">0{index + 1}</span>
-          <h3 class="gap__title">{item.title}</h3>
-          <p class="gap__body">{item.body}</p>
+    <ol class="examples__list">
+      {services.map((service, index) => (
+        <li class="example reveal">
+          <div class="example__heading">
+            <span class="example__no" aria-hidden="true">0{index + 1}</span>
+            <div><p class="example__service">{service.name}</p><h3>{service.example.title}</h3></div>
+          </div>
+          <dl class="example__body">
+            <div><dt>ご相談の状況</dt><dd>{service.example.problem}</dd></div>
+            <div><dt>シクミベースがすること</dt><dd>{service.example.support}</dd></div>
+          </dl>
+          <div class="example__handover"><strong>お渡しするもの</strong><p>{service.example.handover}</p></div>
+          <p class="example__check"><strong>確認すること</strong>{service.example.check}</p>
         </li>
       ))}
     </ol>
-
-    <p class="about__bridge reveal">
-      Web・SNS・AI・データは目的ではありません。必要な手段だけを使い、事業が継続的に回る土台をつくります。
-    </p>
   </div>
 </section>
 
 <style>
-  .about { background: var(--paper); }
-  .kicker__en { margin-left: 8px; color: var(--text-mute); font-weight: 700; opacity: 0.85; }
-  .about__head { max-width: 50em; }
-  .about__statement { font-size: var(--fs-h2); color: var(--navy); }
-  .about__statement strong { font-weight: 700; background-image: linear-gradient(transparent 66%, var(--sky) 66%); background-repeat: repeat-x; }
-  .about__lead { margin-top: clamp(20px, 2.4vw, 28px); color: var(--text-mute); }
-  .gaps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(44px, 5vw, 72px); border-top: 1px solid var(--line); }
-  .gap { padding: clamp(28px, 3vw, 40px) clamp(20px, 2.4vw, 34px); border-inline-end: 1px solid var(--line); }
-  .gap:first-child { padding-inline-start: 0; }
-  .gap:last-child { border-inline-end: 0; padding-inline-end: 0; }
-  .gap__no { display: block; font-size: 0.6875rem; font-weight: 700; letter-spacing: var(--ls-label); color: var(--blue); }
-  .gap__title { margin-top: 14px; font-size: var(--fs-h3); color: var(--navy); }
-  .gap__body { margin-top: 12px; font-size: var(--fs-body-sm); color: var(--text-mute); }
-  .about__bridge { margin-top: 4px; padding: 18px 22px; border-left: 3px solid var(--gold); background: var(--sky-soft); font-weight: 700; color: var(--navy); }
-  @media (max-width: 860px) {
-    .gaps { grid-template-columns: 1fr; }
-    .gap, .gap:first-child, .gap:last-child { padding: 26px 0; border-inline-end: 0; border-bottom: 1px solid var(--line); }
-    .gap:last-child { border-bottom: 0; }
-  }
+  .examples { background: var(--paper); }
+  .kicker__en { color: var(--text-mute); }
+  .examples__note { margin-top: 16px; font-size: .75rem; color: var(--text-mute); }
+  .examples__list { display: grid; gap: 28px; margin-top: clamp(32px, 4vw, 48px); }
+  .example { border: 1px solid var(--line); padding: clamp(24px, 3vw, 36px); border-radius: var(--radius); }
+  .example__heading { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 16px; align-items: start; }
+  .example__no { display: grid; place-items: center; min-height: 40px; background: var(--sky); color: var(--blue-ink); font-size: .75rem; font-weight: 700; border-radius: var(--radius); }
+  .example__service { color: var(--blue-ink); font-size: .75rem; font-weight: 700; }
+  .example h3 { margin-top: 6px; font-size: var(--fs-h3); color: var(--navy); }
+  .example__body { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 32px; margin-top: 24px; }
+  .example dt, .example__handover strong, .example__check strong { font-size: .75rem; font-weight: 700; color: var(--blue-ink); }
+  .example dd { margin-top: 8px; font-size: var(--fs-body-sm); color: var(--text-mute); }
+  .example__handover { margin-top: 24px; padding: 16px 20px; background: var(--sky-soft); }
+  .example__handover p { margin-top: 4px; font-size: var(--fs-body-sm); color: var(--navy); }
+  .example__check { display: grid; gap: 4px; margin-top: 16px; font-size: var(--fs-body-sm); color: var(--text-mute); }
+  @media (max-width: 680px) { .example__body { grid-template-columns: 1fr; gap: 20px; } .example__heading { grid-template-columns: 32px minmax(0, 1fr); gap: 12px; } .example__no { min-height: 32px; } }
 </style>

@@ -12,19 +12,19 @@ const currentYear = new Date().getFullYear();
         <p class="footer__logo">シクミベース</p>
         <p class="footer__tagline">仕組みで、事業を強くする。</p>
         <p class="footer__note">
-          中小企業・地域企業の集客・営業・発信・業務を、属人的な頑張りではなく再現可能な仕組みに変えます。
-          Web・SNS・AI・データは、そのための手段として活用します。
+          ホームページ制作・改善、SNSの企画・添削・分析、問い合わせ・業務の整理。
+          中小企業・地域事業者の担当者が続けられる運用まで整えます。
         </p>
         <a class="btn btn--on-dark footer__cta" href={ctaHref('system')} data-cta="footer-consult" data-cta-topic="system">
-          仕組み化を相談する<span class="btn__arrow" aria-hidden="true">→</span>
+          支援内容を相談する<span class="btn__arrow" aria-hidden="true">→</span>
         </a>
       </div>
 
       <div class="footer__cols">
-        <nav class="footer__col" aria-label="支援領域">
-          <p class="footer__heading">支援領域</p>
+        <nav class="footer__col" aria-label="サービス">
+          <p class="footer__heading">サービス</p>
           <ul>
-            <li><a href="/service/">支援領域一覧</a></li>
+            <li><a href="/service/">サービス一覧</a></li>
             {services.map((service) => <li><a href={`/service/${service.id}/`}>{service.name}</a></li>)}
           </ul>
         </nav>

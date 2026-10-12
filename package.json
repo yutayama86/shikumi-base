@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "description": "シクミベース - 中小企業・地域企業の集客・営業・業務・発信を再現可能な仕組みに変える事業ブランド",
+  "description": "シクミベース - ホームページ制作・SNS企画改善・問い合わせ業務の整理を支援する事業ブランド",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
