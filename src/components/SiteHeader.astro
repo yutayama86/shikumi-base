@@ -3,7 +3,7 @@ import { ctaHref } from '../site.config';
 import { services } from '../data/taxonomy';
 
 const nav = [
-  { href: '/service/', label: '支援領域' },
+  { href: '/service/', label: 'サービス' },
   { href: '/knowledge/', label: 'ナレッジ' },
   { href: '/case/', label: '事例' },
   { href: '/about/', label: 'シクミベースについて' },
@@ -24,7 +24,7 @@ const isActive = (href: string) => current === href || current.startsWith(href);
         ))}
       </ul>
       <a class="btn btn--primary nav__cta" href={ctaHref('system')} data-cta="header-consult" data-cta-topic="system">
-        仕組み化を相談する
+        支援内容を相談する
       </a>
     </nav>
 
@@ -40,13 +40,13 @@ const isActive = (href: string) => current === href || current.startsWith(href);
         {nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
       </ul>
 
-      <p class="mobile-menu__sub">仕組みにする領域</p>
+      <p class="mobile-menu__sub">頼めること</p>
       <ul class="mobile-menu__list mobile-menu__list--sub">
         {services.map((service) => <li><a href={`/service/${service.id}/`}>{service.name}</a></li>)}
       </ul>
 
       <a class="btn btn--primary mobile-menu__cta" href={ctaHref('system')} data-cta="mobile-menu-consult" data-cta-topic="system">
-        仕組み化を相談する
+        支援内容を相談する
       </a>
     </nav>
   </div>

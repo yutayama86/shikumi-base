@@ -10,7 +10,7 @@ interface Props {
   heading?: string;
 }
 
-const { services: ids, heading = '仕組み化の相談先' } = Astro.props;
+const { services: ids, heading = 'Web・SNS・業務の相談先' } = Astro.props;
 const list = ids.map(getService);
 ---
 
@@ -30,7 +30,7 @@ const list = ids.map(getService);
 
   <div class="cta__action">
     <p class="cta__lead">
-      課題がまだ整理できていなくても構いません。集客・営業・発信・業務のどこから仕組みにすると効果が大きいかを、一緒に整理します。
+      ホームページの制作・改善、SNSの企画・添削、問い合わせ対応の整理など、今困っていることからご相談いただけます。
     </p>
     <a
       class="btn btn--primary"
@@ -38,7 +38,7 @@ const list = ids.map(getService);
       data-cta="article-consult"
       data-cta-topic="system"
     >
-      仕組み化について相談する<span class="btn__arrow" aria-hidden="true">→</span>
+      支援内容を相談する<span class="btn__arrow" aria-hidden="true">→</span>
     </a>
   </div>
 </aside>
