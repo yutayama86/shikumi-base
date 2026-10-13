@@ -2,10 +2,15 @@
 import { services, categories } from '../data/taxonomy';
 import { site, ctaHref } from '../site.config';
 
+interface Props {
+  flush?: boolean;
+}
+
+const { flush = false } = Astro.props;
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="footer on-dark">
+<footer class:list={['footer', 'on-dark', { 'footer--flush': flush }]}>
   <div class="wrap">
     <div class="footer__top">
       <div class="footer__brand">
@@ -55,6 +60,7 @@ const currentYear = new Date().getFullYear();
 
 <style>
   .footer { background: var(--navy-deep); color: var(--text-on-dark); padding-block: clamp(48px,5vw,72px) 28px; margin-top: clamp(64px,8vw,112px); }
+  .footer--flush { margin-top: 0; }
   .footer__top { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.4fr); gap: clamp(36px,5vw,72px); padding-bottom: clamp(32px,4vw,48px); border-bottom: 1px solid var(--line-on-dark); }
   .footer__logo { font-size: 1.25rem; font-weight: 700; letter-spacing: .06em; }
   .footer__tagline { margin-top: 8px; font-size: var(--fs-body-sm); font-weight: 700; color: #fff; }
