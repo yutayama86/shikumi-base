@@ -9,6 +9,7 @@ keywords:
   - ChatGPT 業務活用
   - AI 何から
 publishedAt: 2026-08-26
+updatedAt: 2026-10-19
 relatedServices:
   - ai-dx
 relatedArticles:
@@ -129,7 +130,7 @@ AI導入と並行して、業務の手順を整理しておくと効果が大き
 
 手順が言語化されていない業務は、AIに指示を出すこともできません。「この業務をAIに任せたい」と思っても、何をどうやっているかを説明できなければ、指示が書けないからです。
 
-つまり、**AI導入の準備は業務の言語化です**。これは[仕組み化の考え方](/knowledge/shikumika/shikumika-toha/)と同じ話です。
+つまり、**AI導入の準備は業務の言語化です**。これは[仕組み化の考え方](/knowledge/shikumika/shikumika-toha/)と同じ話です。シクミベースが運営する地域メディア『イバトコ』でも、業務の言語化とAI活用による仕組み化を実践しています（詳しくは[イバトコ事例](/case/ibatoco/)をご覧ください）。
 
 ## まとめ
 
