@@ -24,7 +24,7 @@
     "audit:target": "node scripts/verify-target-match.mjs"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/sitemap": "^3.7.5",
     "astro": "^7.3.3"
   },
   "devDependencies": {
