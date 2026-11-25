@@ -9,6 +9,7 @@ keywords:
   - 手順書 書き方
   - 業務標準化
 publishedAt: 2026-09-01
+updatedAt: 2026-11-25
 relatedServices:
   - ai-dx
 relatedArticles:
@@ -65,7 +66,7 @@ draft: false
 
 選び方はシンプルです。**その人が1週間休んだら止まる業務**を1つだけ選びます。複数思い浮かんだら、発生頻度が高いほうを選んでください。年1回の業務より、毎週発生する業務のほうが効果が早く出ます。
 
-この考え方は[仕組み化の進め方](/knowledge/shikumika/shikumika-toha/)と共通です。
+この考え方は[仕組み化の進め方](/knowledge/shikumika/shikumika-toha/)と共通です。 シクミベースが実際に仕組み化した事例として、地域メディア「イバトコ」の運営をご参照ください。[イバトコ](/case/ibatoco/)
 
 ### ステップ2：やりながら記録する
 
