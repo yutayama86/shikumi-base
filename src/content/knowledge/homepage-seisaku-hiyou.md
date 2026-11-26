@@ -9,6 +9,7 @@ keywords:
   - ホームページ 見積もり
   - Web制作会社 選び方
 publishedAt: 2026-08-26
+updatedAt: 2026-11-26
 relatedServices:
   - web
 relatedArticles:
@@ -141,7 +142,7 @@ draft: false
 - 「SEO対策込み」の中身は会社によって別物
 - 制作費だけでなく、公開後にかかる費用も含めて判断する
 
-なお、作り直す前に確認すべきことがあります。原因によっては改修で済む場合があるため、[問い合わせが来ない7つの理由](/knowledge/web/homepage-toiawase-konai/)もあわせてご覧ください。
+なお、作り直す前に確認すべきことがあります。原因によっては改修で済む場合があるため、[問い合わせが来ない7つの理由](/knowledge/web/homepage-toiawase-konai/)もあわせてご覧ください。また、実際にどのように仕組み化したかは[Ibatoco の公開ケーススタディ](/case/ibatoco/)をご参照ください。
 
 シクミベースでは、作り直しありきの提案はしません。いまのサイトを活かせる場合は改修から始めます。[Web改善・制作について](/service/web/)もあわせてご覧ください。
 
